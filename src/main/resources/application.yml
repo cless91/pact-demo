@@ -1,0 +1,9 @@
+logging:
+  level:
+    root: DEBUG
+
+pactbroker:
+  host: localhost
+#  auth:
+#    username:
+#    password:
