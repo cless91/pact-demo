@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>pact-demo</artifactId>
+        <groupId>com.example</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>consumer1</artifactId>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>au.com.dius.pact.provider</groupId>
+                <artifactId>maven</artifactId>
+                <version>${pact.version}</version>
+                <configuration>
+                    <pactDirectory>path/to/pact/files</pactDirectory> <!-- Defaults to ${project.build.directory}/pacts -->
+                    <pactBrokerUrl>http://localhost:80</pactBrokerUrl>
+<!--                    <projectVersion>1.0.100</projectVersion> &lt;!&ndash; Defaults to ${project.version} &ndash;&gt;-->
+<!--                    <trimSnapshot>true</trimSnapshot> &lt;!&ndash; Defaults to false &ndash;&gt;-->
+<!--                    <skipPactPublish>false</skipPactPublish> &lt;!&ndash; Defaults to false &ndash;&gt;-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
