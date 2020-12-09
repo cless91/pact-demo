@@ -18,11 +18,12 @@
                 <artifactId>maven</artifactId>
                 <version>${pact.version}</version>
                 <configuration>
-                    <pactDirectory>path/to/pact/files</pactDirectory> <!-- Defaults to ${project.build.directory}/pacts -->
+<!--                    <pactDirectory>target/pact-->
+<!--                    </pactDirectory> &lt;!&ndash; Defaults to ${project.build.directory}/pacts &ndash;&gt;-->
                     <pactBrokerUrl>http://localhost:80</pactBrokerUrl>
-<!--                    <projectVersion>1.0.100</projectVersion> &lt;!&ndash; Defaults to ${project.version} &ndash;&gt;-->
-<!--                    <trimSnapshot>true</trimSnapshot> &lt;!&ndash; Defaults to false &ndash;&gt;-->
-<!--                    <skipPactPublish>false</skipPactPublish> &lt;!&ndash; Defaults to false &ndash;&gt;-->
+                    <!--                    <projectVersion>1.0.100</projectVersion> &lt;!&ndash; Defaults to ${project.version} &ndash;&gt;-->
+                    <!--                    <trimSnapshot>true</trimSnapshot> &lt;!&ndash; Defaults to false &ndash;&gt;-->
+                    <!--                    <skipPactPublish>false</skipPactPublish> &lt;!&ndash; Defaults to false &ndash;&gt;-->
                 </configuration>
             </plugin>
         </plugins>
